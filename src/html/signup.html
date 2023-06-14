@@ -15,15 +15,15 @@
         </div>
         <div class="signup-form">
             <h1>Sign Up</h1>
-            <form name="login" onsubmit="return validateLogin(this)">
+            <form name="signup" onsubmit="return validateForm(this)">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="Enter your Email here">
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" placeholder="Enter Your Password">
                 <label for="passwordconfirm">Confirm Password</label>
-                <input type="passwordconfirm" name="passwordconfirm" id="passwordconfirm" placeholder="Enter Your Password">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Enter your Email here">
+                <input type="password" name="passwordconfirm" id="passwordconfirm" placeholder="Enter Your Password">
+                <label for="bod">Date of Birth</label>
+                <input type="date" name="bod" id="bod">
                 <div class="gender-radio">
                     <div>
                         <input type="radio" name="gender" id="gender" value="male">
