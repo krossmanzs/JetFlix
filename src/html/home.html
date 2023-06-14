@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Homepage || JetFlix</title>
 </head>
 <body>
-    
+    <nav id="navbar" class="nav-transparent">
+        <h1 class="logo red">JetFlix</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+        </ul>
+        <button id="btn-nav" class="btn-nav-login">Login</button>
+    </nav>
+
+    <div class="home">
+        <div class="signup-container">
+            <div class="top-movie">
+                <h2>Spider-Man: Across the Spider-Verse</h2>
+                <h3>In a Multiverse journey, Spider-Man teams up with other versions of himself to save their existence. As they face a new threat, Miles must redefine heroism to protect his loved ones.</h3>
+            </div>
+            <div class="signup-home">
+                <h2>Sign Up Now</h2>
+                <h3>Watch unlimited movies and TV shows anytime, anywhere.</h3>
+                <form name="signuphome" onsubmit="return validateEmail(this)">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email here">
+                    <button type="submit" class="btn-signup">Sign Up</button>
+                </form>
+                <p>JeTFlix offers a dedicated Kid Profile, providing a safe and curated streaming experience for children. Parents can trust that their kids will find age-appropriate movies, TV shows, and educational content tailored to their interests.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <div class="about">
+                <h2>About us</h2>
+                <p> JeTFlix is a global streaming entertainment service offering a vast collection of movies, TV shows, and more. Our mission is to entertain the world with high-quality content that spans genres and languages.</p>
+            </div>
+            <div class="address">
+                <h2>Address</h2>
+                <p>Jakarta, Indonesia</p>
+                <p>jetflix@gmail.com</p>
+                <p>+62 12345678</p>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <h3>2023 Copyright, JetFlix.com</h3>
+    </footer>
+
+    <script src="../js/script.js"></script>
+
 </body>
 </html>

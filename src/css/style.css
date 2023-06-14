@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&family=Inter:wght@700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+nav {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+}
+
+.nav-colored { 
+    background-color:#000; 
+    transition: background-color 200ms linear;
+}
+
+.nav-transparent { 
+    background-color:transparent;
+    transition: background-color 200ms linear;
+}
+
+.nav-colored .btn-nav-login {
+    color: #000!important;
+    background-color: #E2E2E2;
+    transition: all 200ms linear;
+}
+
+.nav-transparent .btn-nav-login {
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+    transition: all 200ms linear;
+}
+
+nav ul {
+    display: flex;
+    margin-left: 25px;
+    gap: 45px;
+    align-items: center;
+}
+
+nav ul li a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    text-align: center;
+    color: #FFFFFF; 
+}
+
+.logo {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.red {
+    color: #AA0101;
+}
+
+.btn-nav-login {
+    width: 153px;
+    height: 54px;
+    background: #1C1C1C;
+    margin-left: auto;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.home {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../../res/img/bg2.png");
+    background-size: cover;
+    padding-top: 124px;
+    padding: 124px 54px 124px 54px;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 257px;
+}
+
+.signup-container .top-movie {
+    margin: 0 auto;
+    margin-top: 77px;
+}
+
+.signup-container .top-movie h2{
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+}
+
+.signup-container .top-movie h3{
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.signup-container .signup-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.83);
+    border-radius: 50px;
+    padding: 77px 47px;
+}
+
+.signup-container .signup-home h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 31px;
+}
+
+.signup-container .signup-home h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 70px;
+}
+
+.signup-container .signup-home p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 67px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label {
+    align-self: flex-start;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+form input {
+    height: 70px;
+    background: #E2E2E2;
+    border-radius: 10px;
+    padding-left: 27px;
+    font-size: 20px;
+}
+
+form button {
+    height: 70px;
+    border-radius: 10px;
+    background-color: #AA0101;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    margin-top: 57px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 42px 0 10px 0;
+    background: rgba(0, 0, 0, 0.83);
+}
+
+footer > div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+footer .about {
+    width: 703px;
+}
+
+footer .about h2, 
+footer .about p,
+footer .address h2,
+footer .address p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+footer .about p {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+footer .address p {
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+.line {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    border: 1px solid #fff;
+}
+
+footer h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    color: #FFFFFF;
+}
