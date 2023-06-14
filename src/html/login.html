@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Login || JetFlix</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-banner">
+            <h1 class="logo red">JetFlix</h1>
+            <p>Experience a World of Movies and Shows with <p class="red2">JeTFlix</p></p>
+        </div>
+        <div class="login-form">
+            <h1>Login</h1>
+            <p>Welcome back! Login with your data that you entered during sign up</p>
+            <form name="login" onsubmit="return validateLogin(this)">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email here">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter Your Password">
+                <button type="submit" class="btn-login">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <div class="about">
+                <h2>About us</h2>
+                <p> JeTFlix is a global streaming entertainment service offering a vast collection of movies, TV shows, and more. Our mission is to entertain the world with high-quality content that spans genres and languages.</p>
+            </div>
+            <div class="address">
+                <h2>Address</h2>
+                <p>Jakarta, Indonesia</p>
+                <p>jetflix@gmail.com</p>
+                <p>+62 12345678</p>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <h3>2023 Copyright, JetFlix.com</h3>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
