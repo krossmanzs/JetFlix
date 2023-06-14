@@ -5,23 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Login || JetFlix</title>
+    <title>Sign Up || JeTFlix</title>
 </head>
 <body>
     <div class="login-container">
-        <div class="login-banner">
+        <div class="signup-banner">
             <a href="home.html"><h1 class="logo red">JeTFlix</h1></a>
-            <p>Experience a World of Movies and Shows with&nbsp;<span class="red2">JeTFlix</span></p>
+            <p>Unleash the Power of Streaming - Sign Up for<span class="red2">&nbsp;JeTFlix&nbsp;</span>Today!</p>
         </div>
-        <div class="login-form">
-            <h1>Login</h1>
-            <p>Welcome back! Login with your data that you entered during sign up</p>
+        <div class="signup-form">
+            <h1>Sign Up</h1>
             <form name="login" onsubmit="return validateLogin(this)">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="Enter your Email here">
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" placeholder="Enter Your Password">
-                <button type="submit" class="btn-login">Login</button>
+                <label for="passwordconfirm">Confirm Password</label>
+                <input type="passwordconfirm" name="passwordconfirm" id="passwordconfirm" placeholder="Enter Your Password">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email here">
+                <div class="gender-radio">
+                    <div>
+                        <input type="radio" name="gender" id="gender" value="male">
+                        <label for="male" class="label-gender">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="gender" value="female">
+                        <label for="female" class="label-gender">Female</label>
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" name="tos" id="tos">
+                    <label for="tos" class="label-tos">Please read these Terms of Service carefully before using our services. By accessing or using our services, you agree to be bound by these Terms.</label>
+                </div>
+
+                <button type="submit" class="btn-signup">Sign Up</button>
             </form>
         </div>
     </div>
