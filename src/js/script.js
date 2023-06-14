@@ -9,3 +9,12 @@ window.onscroll = function() {
         nav.classList.remove("nav-colored")
     }
 }
+
+function toggleMenu() {
+    nav.classList.toggle("responsive")
+}
+
+function validateEmail() {
+    window.location.href = "./signup.html"
+    return false
+}

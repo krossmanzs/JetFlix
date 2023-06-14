@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/3bdcb0bff7.js" crossorigin="anonymous"></script>
     <title>Homepage || JetFlix</title>
 </head>
 <body>
@@ -16,6 +17,10 @@
             <li><a href="movies.html">Movies</a></li>
         </ul>
         <button id="btn-nav" class="btn-nav-login" onclick="location.href = './login.html'">Login</button>
+        <div>
+            <a class="login" href="login.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+            <a id="icon" class="icon" onclick="return toggleMenu()"><i class="fa-solid fa-bars"></i></a> 
+        </div>
     </nav>
 
     <div class="home">
@@ -27,10 +32,10 @@
             <div class="signup-home">
                 <h2>Sign Up Now</h2>
                 <h3>Watch unlimited movies and TV shows anytime, anywhere.</h3>
-                <form name="signuphome" onsubmit="return validateEmail(this)">
+                <form name="signuphome" onsubmit="return validateEmail()">
                     <label for="email">Email Address</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your Email here">
-                    <button type="submit" class="btn-signup">Sign Up</button>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email here" required>
+                    <button type="submit" class="btn-signup" onclick="return validateEmail()">Sign Up</button>
                 </form>
                 <p>JeTFlix offers a dedicated Kid Profile, providing a safe and curated streaming experience for children. Parents can trust that their kids will find age-appropriate movies, TV shows, and educational content tailored to their interests.</p>
             </div>
