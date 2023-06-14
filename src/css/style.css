@@ -391,3 +391,74 @@ footer h3 {
     align-self: flex-end;
     margin-bottom: 36px;
 }
+
+.news-container {
+    padding: 129px 103px;
+    background: linear-gradient(180deg, #000000 0%, #4D4848 100%);
+}
+
+.news-container h1 {
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    text-align: center;
+    line-height: 39px;
+    color: #FFFFFF;
+    margin-bottom: 82px;
+}
+
+.pop-mov-card {
+    display: flex;
+    margin-bottom: 118px;
+}
+
+.pop-mov-card img {
+    width: 300px;
+    height: auto;
+    margin-right: 54px;
+}
+
+.pop-mov-card > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pop-mov-card > div h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.pop-mov-card > div .genre, 
+.pop-mov-card > div .cast {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.pop-mov-card .btn-mov-option {
+    display: flex;
+    gap: 49px;
+}
+
+.pop-mov-card > div button {
+    width: 200px;
+    height: 50px;
+    background: #AA0101;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    gap: 120px;
+}
